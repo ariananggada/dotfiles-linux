@@ -16,6 +16,7 @@ if command -v "git"> /dev/null 2>&1; then
   alias gba="git branch -a"
   alias gv='git log --graph --format="%C(auto)%h%d %s %C(black)%C(bold)%cr"'
   alias ga="git add"
+  alias gco="git checkout"
   alias gre="git restore"
   alias gcm="git commit"
   alias gps="git push"
