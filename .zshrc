@@ -15,9 +15,13 @@ transfer(){ if [ $# -eq 0 ];then echo "No arguments specified.\nUsage:\n transfe
 
 
 # CUSTOM PLUGINS
-source /opt/local/share/fzf/shell/key-bindings.zsh
+if [ -f /opt/local/share/fzf/shell/key-bindings.zsh ]; then
+  source /opt/local/share/fzf/shell/key-bindings.zsh
+fi
 
-source /opt/local/share/fzf/shell/completion.zsh
+if [ -f /opt/local/share/fzf/shell/completion.zsh ]; then
+  source /opt/local/share/fzf/shell/completion.zsh
+fi
 
 # alternative cd
 eval "$(zoxide init zsh)"
