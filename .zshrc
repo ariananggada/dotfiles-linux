@@ -3,7 +3,13 @@ autoload -U colors && colors
 PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}
 $%b "
 
-. ~/.profile
+if [ -f "$HOME/.profile" ]; then
+  . "$HOME/.profile"
+fi
+
+if [ -f "$HOME/.zprofile" ]; then
+  . "$HOME/.zprofile"
+fi
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
