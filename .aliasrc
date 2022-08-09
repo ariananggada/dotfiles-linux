@@ -24,6 +24,7 @@ if command -v "git"> /dev/null 2>&1; then
   alias gpl="git pull"
   alias gfe="git fetch"
   alias gpdob="git push -d origin "
+  alias gbd="git branch -D "
   alias gplop="git pull origin --prune"
   alias gfeop="git fetch origin --prune"
   alias mgpl='find . -mindepth 1 -maxdepth 1 -type d -print -exec git -C {} pull \;'
