@@ -128,6 +128,15 @@ silent! if plug#begin('~/.vim/plugged')
   Plug 'preservim/nerdtree'
   let NERDTreeShowHidden=1
   let NERDTreeIgnore=['\.DS_Store$', '\.git$']
+  augroup nerd_loader
+    autocmd!
+    autocmd VimEnter * silent! autocmd! FileExplorer
+    autocmd BufEnter,BufNew *
+          \  if isdirectory(expand('<amatch>'))
+          \|   call plug#load('nerdtree')
+          \|   execute 'autocmd! nerd_loader'
+          \| endif
+  augroup END
 
   Plug 'justinmk/vim-gtfo'
 
