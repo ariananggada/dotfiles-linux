@@ -43,13 +43,20 @@ font:
   # size: 14
 
 
-  normal:
-    family: 'TamzenForPowerline'
-    style: Medium
+  # normal:
+  #   family: 'TamzenForPowerline'
+  #   style: Medium
 
-  bold:
-    family: 'TamzenForPowerline'
-    style: Bold
+  # bold:
+  #   family: 'TamzenForPowerline'
+  #   style: Bold
+
+  # # Point size
+  # size: 14
+
+  normal:
+    family: 'VGA'
+    style: Medium
 
   # Point size
   size: 14
