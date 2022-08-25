@@ -53,6 +53,7 @@ if [[ "${OS}" == "Linux" ]] ||
     # fix java apps in dwm
     export _JAVA_AWT_WM_NONREPARENTING=1    # Fix for Java applications in dwm
     export _JAVA_OPTIONS='-Dswing.aatext=TRUE -Dawt.useSystemAAFontSettings=on'
+    export JAVA_HOME='/usr/lib/jvm/java-18-openjdk'
   fi
 
   # # zsh
