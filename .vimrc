@@ -51,8 +51,6 @@ silent! if plug#begin('~/.vim/plugged')
     let g:indentLine_color_term = 239
     let g:indentLine_color_gui = '#616161'
 
-  Plug 'jiangmiao/auto-pairs'
-
   Plug 'junegunn/fzf'
   Plug 'junegunn/fzf.vim'
   Plug 'junegunn/gv.vim'
