@@ -27,31 +27,31 @@ scrolling:
   # multiplier: 3
 
 font:
+  normal:
+    family: 'MesloLGS Nerd Font'
+    style: Regular
+
+  bold:
+    family: 'MesloLGS Nerd Font'
+    style: Bold
+
+  italic:
+    family: 'MesloLGS Nerd Font'
+    style: Italic
+
+  # Point size
+  size: 12
+
   # normal:
-  #   family: 'IBM Plex Mono'
-  #   style: Regular
+  #   family: 'TamzenForPowerline'
+  #   style: Medium
 
   # bold:
-  #   family: 'IBM Plex Mono'
+  #   family: 'TamzenForPowerline'
   #   style: Bold
-
-  # italic:
-  #   family: 'IBM Plex Mono'
-  #   style: Italic
 
   # # Point size
   # size: 14
-
-  normal:
-    family: 'TamzenForPowerline'
-    style: Medium
-
-  bold:
-    family: 'TamzenForPowerline'
-    style: Bold
-
-  # Point size
-  size: 14
 
   # Offset is the extra space around each character. `offset.y` can be thought of
   # as modifying the line spacing, and `offset.x` as modifying the letter spacing.

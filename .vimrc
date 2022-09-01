@@ -601,6 +601,7 @@ endif
 try
   let g:coc_global_extensions = [
         \ 'coc-snippets',
+        \ 'coc-pairs',
         \ 'coc-tsserver',
         \ 'coc-json',
         \ 'coc-html',
