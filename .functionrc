@@ -82,7 +82,9 @@ vfroot() {
 }
 
 # search file inside code dir and open on $EDITOR(vim)
-vfc() { $EDITOR $(fd . code | sk) }
+vfc() {
+  $EDITOR $(fd . code | sk) 
+}
 
 # vd() {
 #   local dir
