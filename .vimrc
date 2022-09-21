@@ -189,15 +189,15 @@ silent! if plug#begin('~/.vim/plugged')
   " Plug 'luochen1990/rainbow'
   " let g:rainbow_active = 1 "set to 0 if you want to enable it later via :RainbowToggle
 
-  " " vimsence (discord)
-  " Plug 'vimsence/vimsence'
-  " let g:vimsence_client_id = '439476230543245312'
-  " let g:vimsence_small_text = 'Vim'
-  " let g:vimsence_small_image = 'Vim'
-  " let g:vimsence_editing_details = 'Editing: {}'
-  " let g:vimsence_editing_state = 'Working on: {}'
-  " let g:vimsence_file_explorer_text = 'In NERDTree'
-  " let g:vimsence_file_explorer_details = 'Looking for files'
+  " vimsence (discord)
+  Plug 'vimsence/vimsence'
+  let g:vimsence_client_id = '439476230543245312'
+  let g:vimsence_small_text = 'Vim'
+  let g:vimsence_small_image = 'Vim'
+  let g:vimsence_editing_details = 'Editing: {}'
+  let g:vimsence_editing_state = 'Working on: {}'
+  let g:vimsence_file_explorer_text = 'In NERDTree'
+  let g:vimsence_file_explorer_details = 'Looking for files'
 
   if has('nvim')
     Plug 'github/copilot.vim'
