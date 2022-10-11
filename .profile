@@ -1,5 +1,6 @@
 . "$HOME/.functionrc"
 . "$HOME/.aliasrc"
+. "$HOME/.local.aliasrc"
 
 # detect os platform
 unameOut="$(uname -s)"
@@ -132,9 +133,6 @@ fi
 
 # fzf
 export FZF_DEFAULT_COMMAND='fd --type f --hidden --follow --exclude .git'
-
-# oh-my-posh
-eval "$(oh-my-posh init bash)"
 
 # fnm
 export PATH=/home/ian/.fnm:$PATH
