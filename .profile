@@ -1,7 +1,5 @@
-. "$HOME/.cargo/env"
 . "$HOME/.functionrc"
 . "$HOME/.aliasrc"
-
 
 # detect os platform
 unameOut="$(uname -s)"
@@ -91,7 +89,13 @@ if [[ "${OS}" == "Linux" ]] ||
   if ! command -v cargo &> /dev/null; then
     . "$HOME/.cargo/env"
   fi
-  
+
+  # nodejs using fnm
+  if ! command -v fnm &> /dev/null; then
+    export PATH=/home/ian/.fnm:$PATH
+    eval "`fnm env`"
+  fi
+
   # golang
   if [[ "${OS}" != "Darwin" ]]; then
     export PATH=$PATH:/usr/local/go/bin
@@ -128,3 +132,10 @@ fi
 
 # fzf
 export FZF_DEFAULT_COMMAND='fd --type f --hidden --follow --exclude .git'
+
+# oh-my-posh
+eval "$(oh-my-posh init bash)"
+
+# fnm
+export PATH=/home/ian/.fnm:$PATH
+eval "`fnm env`"
