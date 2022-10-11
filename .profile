@@ -23,6 +23,14 @@ if [[ "${OS}" == "Linux" ]] ||
    [[ "${OS}" == "OpenBSD" ]] || 
    [[ "${OS}" == "FreeBSD" ]]; then
 
+  # if running bash
+  if [ -n "$BASH_VERSION" ]; then
+      # include .bashrc if it exists
+      if [ -f "$HOME/.bashrc" ]; then
+          . "$HOME/.bashrc"
+      fi
+  fi
+
   export PATH=$HOME/bin:$HOME/.local/bin:$PATH
 
   if [[ "${OS}" != "Darwin" ]]; then
@@ -70,12 +78,6 @@ if [[ "${OS}" == "Linux" ]] ||
   else
     export CVSEDITOR=vim
   fi
-
-  # nodejs
-  export NVM_DIR="$HOME/.nvm"
-  [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-  [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-  export NODE_PATH="$(which node)"
 
   # vim
   export VIMCONFIG=$HOME/.vim
