@@ -169,7 +169,7 @@ matches:
 
 #id creates a timestamp for unique ids in notes like Zettlr - handy for other apps that don't include that functionality
   - trigger: ":id"
-    replace: "{{time}}  "
+    replace: "{{time}}"
     vars:
       - name: time
         type: date
