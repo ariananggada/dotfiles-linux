@@ -32,6 +32,10 @@ if command -v "git"> /dev/null 2>&1; then
   alias glv='git log --graph --format="%C(auto)%h%d %s %C(black)%C(bold)%cr"'
   alias multipull="find . -mindepth 1 -maxdepth 1 -type d -print -exec git -C {} pull \;"
   alias multifetch="find . -mindepth 1 -maxdepth 1 -type d -print -exec git -C {} fetch \;"
+  alias multicheckoutmaster="find . -mindepth 1 -maxdepth 1 -type d -print -exec git -C {} checkout master \;"
+  alias multicheckoutstaging="find . -mindepth 1 -maxdepth 1 -type d -print -exec git -C {} checkout staging \;"
+  alias multicheckoutrelease="find . -mindepth 1 -maxdepth 1 -type d -print -exec git -C {} checkout release \;"
+  alias multicheckout="multipull&&multifetch&&multicheckoutmaster&&multicheckoutstaging&&multicheckoutrelease"
 fi
 
 # nvm alias

@@ -166,6 +166,10 @@ countdown() {
   fi
 }
 
+multiclonegroup() {
+ ghorg clone $1 --base-url=http://repo.bkpm.go.id --scm=gitlab --token=AaX-g_My3qPEetTZppmN --preserve-dir -p .
+}
+
 if [ "$PLATFORM" = 'Darwin' ]; then
   alias tac='tail -r'
   o() {
